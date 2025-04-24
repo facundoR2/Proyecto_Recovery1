@@ -4,16 +4,16 @@ from os import walk # Para recorrer directorios
 from shutil import copyfile # Para copiar archivos
 import psutil # Para detectar unidades USB
 
-def recover_usb_data(usb_path, output_folder_name="USB_RecoveryV1"):
+def recover_usb_data(usb_path, output_folder_name="USB_RecoveryV1"): #el sistema busca la ruta dada por el usuario. y busca la carpeta con ese nombre, Recomendable que la carpeta sea donde se quiere copiar los archivos
     # Obtener el escritorio del usuario
     desktop = os.path.join(os.path.expanduser("~"), "Desktop")
     output_folder = os.path.join(desktop, output_folder_name)
 
     def detect_usb_drives():
         usb_drives = []
-        partitions = psutil.disk_partitions()
+        partitions = psutil.disk_partitions() #detecta particiones
         for partition in partitions:
-            if 'removable' in partition.opts:
+            if 'removable' in partition.opts: # si la particion tiene la opción de "removible" se agrega al arreglo (ej: "F://pablitodrive"
                 usb_drives.append(partition.device)
         return usb_drives
 
