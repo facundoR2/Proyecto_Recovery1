@@ -1,0 +1,27 @@
+SI vas a realizar alguna de estas tareas, edita esta documento y agrega el numero de problema y luego tu nombre acontinuacion:
+ej: 1-facu.
+
+ante la duda. ha una seccion llamada "issues" donde preguntar algo.
+
+posibles agregados/algunos necesarios:
+1) arreglar interfaz de consola.
+  el sistema actua automaticamente al ejecutarlo, pero si no encuentra un USB con la direccion que le dimos, debe mostrar una interfaz en la terminal
+  que nos permita elegir uno de los USB detectados manualmente.
+2) el sistema debe distinguir entre los dispositivos conectados al USB. hay que asegurarse de que lo agrege al arreglo que le mostrará al usuario por consola sean USB-drives.
+3) validaciones en caso de : 
+no encontrar archivos en el usb;
+fallo inesperado al leer archivos; 
+-fallo al detectar archivos corruptos o incompletos.
+--fallo al juntar los datos transformados en bytes y colocarlos como string en un archivo de texto plano.
+--fallo al copiar los archivos a la carpeta destino.
+dar aviso de que se terminaron los procesos del sistema.
+escribir un "cargando" mientras se ejecute el sistema.
+4)que el programa pregunte al  usuario en caso de no poder abrir un archivo, para ver si desea copiarlo.
+5) completar y agregar al git el plan de pruebas.
+6) ejecutar el plan de pruebas( preferentemente en una rama aparte de la creada).
+
+
+
+IMPORTANTE
+crear un archivo de texto donde anuncies que terminaste o avanzanste con algun problema en algun punto para poder revisarlo
+-->NO FUSIONES TU RAMA CON LA RAMA MAESTRA HASTA COMPLETADA LA REVISION Y APROBADOS LOS CAMBIOS.<--
