@@ -4,6 +4,7 @@ ej: 1-facu.
 ante la duda. ha una seccion llamada "issues" donde preguntar algo.
 
 posibles agregados/algunos necesarios:
+I1)Modularizar el sistema para facilitar su testeo con Pytest.
 1) arreglar interfaz de consola.
   el sistema actua automaticamente al ejecutarlo, pero si no encuentra un USB con la direccion que le dimos, debe mostrar una interfaz en la terminal
   que nos permita elegir uno de los USB detectados manualmente.
